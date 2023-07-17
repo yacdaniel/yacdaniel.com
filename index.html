@@ -49,15 +49,18 @@
 
   
 <script type="application/javascript">
+	
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-96459276-1', 'auto');
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-96459276-1"></script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 	
-	ga('send', 'pageview');
+	  gtag('config', 'UA-96459276-1');
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 </head>
 <body>
     <div id="profileContainer">
@@ -91,7 +94,7 @@ if (!doNotTrack) {
       </div>
     </div><footer>
   <p>
-  &copy; 2020 Yacdaniel Hurtado.
+  &copy; 2023 Yacdaniel Hurtado.
   Powered by <a href="https://gohugo.io/">Hugo</a>
   using the <a href="https://github.com/koirand/pulp/">pulp</a> theme.
   </p>
